@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Bicubik;
+  src: url(../assets/fonts/Bicubik.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+.videoContainer {
+  width: 100%;
+  height: 800px;
+  z-index: 0;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.test1 {
+  font-family: Bicubik;
+  font-size: 20px;
+  text-align: center;
+}
+
+.test2 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+}
