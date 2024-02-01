@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/main/NavBar";
 import Home from "./components/main/Home";
+import Footer from "./components/main/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Home />
+        <Footer />
       </div>
     </BrowserRouter>
   );

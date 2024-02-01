@@ -8,9 +8,15 @@
   src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
 .videoContainer {
+  position: relative;
   width: 100%;
-  height: 800px;
+  height: 70vh;
   z-index: 0;
 }
 
@@ -30,17 +36,86 @@
   width: 100%;
   height: 100%;
   top: 0;
+  text-align: center;
 }
 
-.test1 {
+.title1 {
   font-family: Bicubik;
-  font-size: 20px;
-  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.test2 {
+.title2 {
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
-  text-align: center;
+}
+
+.productMainContainer {
+  background-size: contain;
+  background-image: url("../../public/images/cdzBG.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productSubContainer {
+  margin: 3rem;
+  max-width: 1200px;
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  gap: 2rem 3rem;
+}
+
+.productTitle {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productIcon {
+  border-radius: 5px;
+  outline: 5px solid #0d1d33;
+  transition: all 0.7s;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.productIcon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  outline: 5px solid #fd5727;
+}
+
+@media screen and (min-width: 480px) {
+  .title1 {
+    font-size: 36px;
+  }
+
+  .title2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title1 {
+    font-size: 48px;
+  }
+
+  .title2 {
+    font-size: 32px;
+  }
+
+  .productTitle {
+    justify-content: start;
+  }
 }
