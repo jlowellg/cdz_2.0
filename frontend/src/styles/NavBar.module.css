@@ -4,9 +4,9 @@
   justify-content: space-between;
   height: 80px;
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   background: linear-gradient(to bottom, #0d1d33, #15394d);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -14,8 +14,64 @@
   height: 80px;
 }
 
+.navLargeMenu {
+  align-items: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  gap: 1.2rem;
+  padding: 5px;
+  display: none;
+}
+
+.navLargeMenuItem {
+  align-items: center;
+  display: flex;
+  gap: 3px;
+}
+
+.navButtonIcon {
+  fill: white;
+}
+
+.navLargeMenuItem:hover {
+  color: #fd5727;
+}
+
 .menuIcon {
   color: #fd5727;
   height: 50px;
   width: 50px;
+}
+
+.menuButton {
+  padding: 5px;
+}
+
+.menuButton:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.menuContainer {
+  width: 180px;
+}
+
+.menuItem:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .menuButton {
+    display: none;
+  }
+
+  .navLargeMenu {
+    display: inline-flex;
+  }
+
+  .navContainer {
+    padding: 0.5rem 3rem;
+  }
 }
