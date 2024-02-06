@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NavBarCSS from "../../styles/NavBar.module.css";
-import { Button } from "../ui/button";
 import NavMenu from "../sub/NavMenu";
 import HomeIcon from "@mui/icons-material/Home";
 import PriceChangeIcon from "@mui/icons-material/PriceChange";
@@ -11,14 +11,18 @@ const NavBar = () => {
     <div className={NavBarCSS.navContainer}>
       <img className={NavBarCSS.cdzLogo} src="images/cdzLogo.png" />
       <nav className={NavBarCSS.navLargeMenu}>
-        <button className={NavBarCSS.navLargeMenuItem}>
-          <HomeIcon />
-          HOME
-        </button>
-        <button className={NavBarCSS.navLargeMenuItem}>
-          <PriceChangeIcon />
-          PRICES
-        </button>
+        <Link reloadDocument to="/">
+          <button className={NavBarCSS.navLargeMenuItem}>
+            <HomeIcon />
+            HOME
+          </button>
+        </Link>
+        <Link reloadDocument to="/prices">
+          <button className={NavBarCSS.navLargeMenuItem}>
+            <PriceChangeIcon />
+            PRICES
+          </button>
+        </Link>
         <button className={NavBarCSS.navLargeMenuItem}>
           <AccountCircleIcon />
         </button>

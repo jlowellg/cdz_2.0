@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Bicubik;
+  src: url(../assets/fonts/Bicubik.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: KdamThmorPro;
+  src: url(../assets/fonts/KdamThmorPro-Regular.ttf);
+}
+
+.productTitle {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricesFont {
+  font-family: KdamThmorPro;
+}

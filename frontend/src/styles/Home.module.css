@@ -37,6 +37,7 @@
   height: 100%;
   top: 0;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .title1 {
