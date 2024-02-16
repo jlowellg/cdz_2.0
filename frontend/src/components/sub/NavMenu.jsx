@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import NavBarCSS from "../../styles/NavBar.module.css";
 
@@ -23,12 +23,16 @@ const NavMenu = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent className={NavBarCSS.menuContainer}>
         <DropdownMenuGroup>
-          <DropdownMenuItem className={NavBarCSS.menuItem}>
-            Home
-          </DropdownMenuItem>
-          <DropdownMenuItem className={NavBarCSS.menuItem}>
-            Prices
-          </DropdownMenuItem>
+          <Link reloadDocument to="/">
+            <DropdownMenuItem className={NavBarCSS.menuItem}>
+              Home
+            </DropdownMenuItem>
+          </Link>
+          <Link reloadDocument to="/prices">
+            <DropdownMenuItem className={NavBarCSS.menuItem}>
+              Prices
+            </DropdownMenuItem>
+          </Link>
           <DropdownMenuItem className={NavBarCSS.menuItem}>
             Login
           </DropdownMenuItem>
