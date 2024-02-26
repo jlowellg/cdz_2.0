@@ -100,6 +100,12 @@ const Prices = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <div className={`${PricesCSS.calculatorTriggerContainer}`}>
+            <span className={` ${TypographyCSS.mutedText}`}>
+              Need specific amount?
+            </span>
             <ValorantCalculator />
           </div>
 

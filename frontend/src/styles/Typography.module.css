@@ -18,11 +18,15 @@
   src: url(../assets/fonts/KdamThmorPro-Regular.ttf);
 }
 
+@font-face {
+  font-family: Motserrat;
+  src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 .productTitle {
   font-family: Poppins;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,4 +38,17 @@
 
 .mediumText {
   font-size: 24px;
+}
+
+.mutedText {
+  color: gray;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+
+.drawerTrigger {
+  color: black;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
 }
